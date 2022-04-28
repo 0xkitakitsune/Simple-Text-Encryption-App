@@ -1,35 +1,34 @@
 {
-  "name": "cryptotextapp",
+  "name": "simple-text-encryption",
   "version": "1.0.0",
-  "description": "cryptotextapp",
-  "main": "main.js",
+  "description": "A simple app to encrypt plaintext with AES, CryptoJs",
+  "main": "src/main.js",
   "scripts": {
     "start": "electron .",
-    "pack": "electron-builder build --dir",
-    "dist": "electron-builder build"
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "build": {
-    "appId": "your.id",
+    "appId": "simple-text-encryption",
     "mac": {
-      "category": "your.app.category.type"
+      "category": "com.simple-text-encryption.app"
     },
     "linux": {
-      "target": "AppImage"
+      "target": "AppImage",
+      "icon": "build/icon.png"
     },
     "win": {
-      "target": "nsis"
+      "target": "nsis",
+      "icon": "build/icon.png"
     }
   },
   "author": "kitakitsune",
-  "license": "MIT",
+  "license": "none",
   "devDependencies": {
     "electron": "^13.1.7",
     "electron-builder": "^22.11.7"
   },
   "dependencies": {
-    "bootstrap": "^5.0.2",
-    "bootstrap-icons": "^1.5.0",
-    "ciphersweet-js": "^2.0.4",
-    "crypto-js": "^4.0.0"
+    "crypto-js": "^4.1.1"
   }
 }

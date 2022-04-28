@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Simple Text Encryption </title>
+        <link rel="stylesheet" href="../style/style.css">
+        <script defer src="renderer.js"></script>
+    </head>
+    <body>
+        <h1>Simple Text Encryption&#128272;</h1>
+        <div class="header">
+            <input id="password" type="password" placeholder="Enter a Password">
+            <button onclick="erasePassword()">Erase Password&#128273;</button>
+            <button onclick="eraseAll()">Erase All</button>
+        </div>
+        <div class="center">
+            <textarea id="encryptText" rows="num" cols="num"></textarea>
+            <div class="center-buttons">
+                <button onclick="encrypt()">Encrypt&#128274;</button>
+                <button onclick="eraseEncrypt()">Erase</button>
+                <button onclick="copyTextEncrypt()">Copy</button>
+            </div>
+        </div>
+        <div class="footer">
+            <textarea id="decryptText" rows="num" cols="num"></textarea>
+            <div class="footer-buttons">
+                <button onclick="decrypt()">Decrypt&#128275;</button>
+                <button onclick="eraseDecrypt()">Erase</button>
+                <button onclick="copyTextDecrypt()">Copy</button>
+            </div>
+        </div>
+    </body>
+</html>
