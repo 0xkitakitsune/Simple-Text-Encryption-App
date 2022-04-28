@@ -13,7 +13,7 @@ function createWindow () {
         nodeIntegration: true,
         contextIsolation: false,
       },
-      icon: 'build/icon.png'
+      icon: 'public/icon.png'
     })
 
     

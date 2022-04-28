@@ -15,11 +15,11 @@
     },
     "linux": {
       "target": "AppImage",
-      "icon": "build/icon.png"
+      "icon": "public/icon.png"
     },
     "win": {
       "target": "nsis",
-      "icon": "build/icon.png"
+      "icon": "public/icon.png"
     }
   },
   "author": "kitakitsune",
