@@ -1,0 +1,35 @@
+{
+  "name": "cryptotextapp",
+  "version": "1.0.0",
+  "description": "cryptotextapp",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder build --dir",
+    "dist": "electron-builder build"
+  },
+  "build": {
+    "appId": "your.id",
+    "mac": {
+      "category": "your.app.category.type"
+    },
+    "linux": {
+      "target": "AppImage"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "author": "kitakitsune",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^13.1.7",
+    "electron-builder": "^22.11.7"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "bootstrap-icons": "^1.5.0",
+    "ciphersweet-js": "^2.0.4",
+    "crypto-js": "^4.0.0"
+  }
+}
